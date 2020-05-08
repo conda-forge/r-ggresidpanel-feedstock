@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -13,8 +13,8 @@ source:
   sha256: 2f86b7ae17153a9d6378fd1a3aba032b2d5a66754f871e010866b49b84e052ef
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-mass
@@ -48,11 +48,12 @@ test:
 about:
   home: https://goodekat.github.io/ggResidpanel/
   license: MIT
-  summary: An R package for creating panels of diagnostic plots for residuals from a model  using
-    ggplot2 and plotly to analyze residuals and model assumptions from a variety of  viewpoints.
-    It also allows for the creation of interactive diagnostic plots.
+  summary: An R package for creating panels of diagnostic plots for residuals from a model  using ggplot2 and plotly to analyze residuals and model assumptions from a variety of  viewpoints. It also allows for the creation of interactive diagnostic plots.
   license_family: MIT
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
+    - LICENSE
 extra:
   recipe-maintainers:
     - conda-forge/r
