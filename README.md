@@ -1,11 +1,11 @@
-About r-ggresidpanel
-====================
+About r-ggresidpanel-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggresidpanel-feedstock/blob/main/LICENSE.txt)
 
 Home: https://goodekat.github.io/ggResidpanel/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggresidpanel-feedstock/blob/main/LICENSE.txt)
 
 Summary: An R package for creating panels of diagnostic plots for residuals from a model  using ggplot2 and plotly to analyze residuals and model assumptions from a variety of  viewpoints. It also allows for the creation of interactive diagnostic plots.
 
