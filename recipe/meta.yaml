@@ -1,6 +1,5 @@
 {% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ggresidpanel
@@ -13,8 +12,7 @@ source:
   sha256: 2f86b7ae17153a9d6378fd1a3aba032b2d5a66754f871e010866b49b84e052ef
 
 build:
-  merge_build_host: true  # [win]
-  number: 4
+  number: 5
   noarch: generic
   rpaths:
     - lib/R/lib/
