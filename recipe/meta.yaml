@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggResidpanel_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggResidpanel/ggResidpanel_{{ version }}.tar.gz
-  sha256: 2f86b7ae17153a9d6378fd1a3aba032b2d5a66754f871e010866b49b84e052ef
+  sha256: 7bc17e4fba7846f6f9d11956f0ab266a2f06f2c3e9d40a63fe4ab235b1db5b04
 
 build:
-  number: 6
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
